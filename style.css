@@ -139,3 +139,106 @@ footer {
     gap: 15px;
   }
 }
+
+
+/* TEXT CONTENT */
+
+.section p {
+  font-size: 16px;
+  color: #CFCFCF;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* LIST STYLING (Projects & Experience) */
+
+.project ul,
+#experience ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project ul li,
+#experience ul li {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #D0D0D0;
+}
+
+/* PROJECT CARD HOVER */
+
+.project {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(138,112,255,0.25);
+}
+
+/* SKILLS HOVER */
+
+.skills-grid span {
+  transition: all 0.3s ease;
+}
+
+.skills-grid span:hover {
+  background: #8A70FF;
+  color: #121212;
+  transform: scale(1.05);
+}
+
+/* EXPERIENCE SECTION */
+
+#experience p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* EDUCATION SECTION */
+
+#education p {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+#education strong {
+  color: #8A70FF;
+}
+
+/* CONTACT LINKS */
+
+#contact a {
+  color: #8A70FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #5A88FF;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  background: #1A1A1A;
+}
+
+/* SIMPLE FADE-IN ANIMATION */
+
+.section {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
